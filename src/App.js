@@ -7,7 +7,7 @@ export default function App() {
   const [questions, setQuestions] = useState([
     {
       // title of the questions
-      title: "Sunder Pichai is CEO of .......",
+      title: "Sunder Pichai is CEO of",
       //options in array format
       options: ["Twitter", "Google", "Facebook", "Uber"],
       // my answer is ....
@@ -23,7 +23,7 @@ export default function App() {
       isActive: false
     },
     {
-      title: "Jaipur is the capital of .......",
+      title: "Jaipur is the capital of",
       options: ["Delhi", "Rajasthan", "Uttrakhand", "d"],
       answer: "Rajasthan",
       isAnswered: false,
@@ -137,14 +137,18 @@ export default function App() {
                   {options.map((element, index) => {
                     return (
                       <Fragment key={index}>
-                        <input
-                          type="radio"
-                          id={element}
-                          name="fav_language"
-                          value={element}
-                          onChange={selectOption}
-                        />
-                          <label for={element}>{element}</label>
+                        <div className="inputQuizOption">
+                          <input
+                            type="radio"
+                            id={element}
+                            name="fav_language"
+                            value={element}
+                            onChange={selectOption}
+                          />
+                        </div>
+                        <div className="labelQuizOption">
+                            <label for={element}>{element}</label>
+                        </div>
                       </Fragment>
                     );
                   })}
