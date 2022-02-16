@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #1135db;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: "Caveat", cursive;
+  font-family: "Comfortaa", cursive;
+  /* font-family: "Roboto", sans-serif; */
+}
+
+.quiz-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.quiz-container-heading {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #efecfa;
+}
+
+.button-heading {
+  font-family: "Caveat", cursive;
+  font-family: "Comfortaa", cursive;
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: 40px;
+  /* height: 80px;
+  width: 80px; */
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.quizBox {
+  width: 100%;
+  height: 70vh;
+  padding-top: 60px;
+  /* background-color: #b8c6e6; */
+  background-color: #ffefba;
+}
+
+.quizBox h2 {
+  padding: 10px 0px 10px 0px;
+  color: #34428f;
+  font-family: sans-serif;
+}
+
+.msgError {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scoreMsg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  height: 30vh;
+  font-size: 30px;
+  font-family: "Balsamiq Sans", cursive;
+  color: white;
+}
+
+.scoreMsg span {
+  background-color: #b0b3da;
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  /* background-color: t; */
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  margin-left: 2px;
+  background-color: #efecfa;
+  color: #1135db;
+}
+
+h4 {
+  width: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    width: 100%;
+    height: auto;
+  }
+  .quiz-container-heading {
+    font-size: 30px;
+    text-align: center;
+    height: auto;
+    padding: 30px 0px 30px 0px;
+  }
+
+  .quizBox h2 {
+    font-size: 13px;
+  }
+
+  .quizBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+  }
+}
