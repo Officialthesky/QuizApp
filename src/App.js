@@ -30,6 +30,15 @@ export default function App() {
       error: false,
       isAnsweredCorrectly: false,
       isActive: false
+    },
+    {
+      title: "Sum of three angles of triangle is",
+      options: ["180 degree", "90 degree", "45 degree", "360 degree"],
+      answer: "180 degree",
+      isAnswered: false,
+      error: false,
+      isAnsweredCorrectly: false,
+      isActive: false
     }
   ]);
 
