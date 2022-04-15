@@ -24,7 +24,7 @@ export default function App() {
     },
     {
       title: "Jaipur is the capital of",
-      options: ["Delhi", "Rajasthan", "Uttrakhand", "d"],
+      options: ["Delhi", "Rajasthan", "Uttrakhand", "Uttar Pradesh"],
       answer: "Rajasthan",
       isAnswered: false,
       error: false,
